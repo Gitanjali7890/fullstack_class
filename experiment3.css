@@ -1,0 +1,114 @@
+/* CSS VARIABLES */
+:root {
+    --bg-color: #f1f5f9;
+    --text-color: #020617;
+    --card-bg: #ffffff;
+    --sidebar-bg: #0f172a;
+    --header-bg: #1e293b;
+}
+
+.dark {
+    --bg-color: #020617;
+    --text-color: #e5e7eb;
+    --card-bg: #0f172a;
+    --sidebar-bg: #020617;
+    --header-bg: #020617;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+/* GRID LAYOUT */
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 70px 1fr 50px;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    background: var(--header-bg);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar {
+    grid-area: sidebar;
+    background: var(--sidebar-bg);
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* MAIN */
+.main {
+    grid-area: main;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 15px;
+    background: var(--header-bg);
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

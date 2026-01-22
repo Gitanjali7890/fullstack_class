@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp1</title>
+    <link rel="stylesheet" href="experiment1.css">
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form id="regForm" novalidate>
+        <label>Full Name:</label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <small class="error" id="nameError"></small>
+        <br>
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="abc@gmail.com" required>
+        <small class="error" id="emailError"></small>
+        <br>
+        <label>Age:</label>
+        <input type="number" id="age" placeholder="Enter age" required>
+        <small class="error" id="ageError"></small>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+    
+<script src="experiment1.js"></script>
+   
+</body>
+</html>

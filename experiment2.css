@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e5e7eb;
+}
+
+.bank-container {
+    width: 380px;
+    background: #020617;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.balance-box {
+    background: #020617;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.balance-box p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.balance-box h2 {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.transaction-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: #020617;
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+#message {
+    display: block;
+    min-height: 18px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #22d3ee, #3b82f6);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.withdraw {
+    background: linear-gradient(135deg, #fb7185, #ef4444);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    .bank-container {
+        width: 90%;
+    }
+}
