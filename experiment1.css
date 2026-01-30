@@ -101,3 +101,26 @@ button:hover {
     margin-bottom: 14px;
     display: block;
 }
+.back-home {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(79, 172, 254, 0.4);
+    transition: all 0.3s ease;
+}
+
+.back-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(79, 172, 254, 0.6);
+}
+
+.back-home:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}

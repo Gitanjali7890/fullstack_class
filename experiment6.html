@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Drawing Tool</title>
+    <link rel="stylesheet" href="exp6.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button id="undoBtn">Undo</button>
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#2979ff">
+    </div>
+
+    <!-- SVG Canvas -->
+    <svg id="svgCanvas"></svg>
+
+    <!-- Counter -->
+    <div class="counter">
+        Circles drawn: <span id="count">0</span>
+    </div>
+
+</div>
+<a href="index.html" class="back-home"> back to Home</a>
+<script src="exp6.js"></script>
+</body>
+</html>
